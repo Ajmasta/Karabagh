@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/karabagh/static/css/main.3c69810e.chunk.css",
-    "main.js": "/karabagh/static/js/main.92280901.chunk.js",
-    "main.js.map": "/karabagh/static/js/main.92280901.chunk.js.map",
-    "runtime-main.js": "/karabagh/static/js/runtime-main.062b6f36.js",
-    "runtime-main.js.map": "/karabagh/static/js/runtime-main.062b6f36.js.map",
-    "static/js/2.63372e5c.chunk.js": "/karabagh/static/js/2.63372e5c.chunk.js",
-    "static/js/2.63372e5c.chunk.js.map": "/karabagh/static/js/2.63372e5c.chunk.js.map",
-    "index.html": "/karabagh/index.html",
-    "precache-manifest.938dea920349ab474f20968753f3fba9.js": "/karabagh/precache-manifest.938dea920349ab474f20968753f3fba9.js",
-    "service-worker.js": "/karabagh/service-worker.js",
-    "static/css/main.3c69810e.chunk.css.map": "/karabagh/static/css/main.3c69810e.chunk.css.map",
-    "static/js/2.63372e5c.chunk.js.LICENSE.txt": "/karabagh/static/js/2.63372e5c.chunk.js.LICENSE.txt",
-    "static/media/RegionalMap.png": "/karabagh/static/media/RegionalMap.6401acae.png",
-    "static/media/armeniaHeart.png": "/karabagh/static/media/armeniaHeart.b31a9946.png",
-    "static/media/App.css": "/karabagh/static/media/monastery.8226e90d.jpg",
-    "static/media/logo.svg": "/karabagh/static/media/logo.5d5d9eef.svg",
-    "static/media/map1.png": "/karabagh/static/media/map1.12a99a32.png"
+    "main.css": "/Karabagh/static/css/main.3c76b784.chunk.css",
+    "main.js": "/Karabagh/static/js/main.2f507c2e.chunk.js",
+    "main.js.map": "/Karabagh/static/js/main.2f507c2e.chunk.js.map",
+    "runtime-main.js": "/Karabagh/static/js/runtime-main.686f1436.js",
+    "runtime-main.js.map": "/Karabagh/static/js/runtime-main.686f1436.js.map",
+    "static/js/2.63372e5c.chunk.js": "/Karabagh/static/js/2.63372e5c.chunk.js",
+    "static/js/2.63372e5c.chunk.js.map": "/Karabagh/static/js/2.63372e5c.chunk.js.map",
+    "index.html": "/Karabagh/index.html",
+    "precache-manifest.8c312a549f38b374d6f9ca232d2e07cf.js": "/Karabagh/precache-manifest.8c312a549f38b374d6f9ca232d2e07cf.js",
+    "service-worker.js": "/Karabagh/service-worker.js",
+    "static/css/main.3c76b784.chunk.css.map": "/Karabagh/static/css/main.3c76b784.chunk.css.map",
+    "static/js/2.63372e5c.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.63372e5c.chunk.js.LICENSE.txt",
+    "static/media/RegionalMap.png": "/Karabagh/static/media/RegionalMap.6401acae.png",
+    "static/media/armeniaHeart.png": "/Karabagh/static/media/armeniaHeart.b31a9946.png",
+    "static/media/App.css": "/Karabagh/static/media/monastery.8226e90d.jpg",
+    "static/media/logo.svg": "/Karabagh/static/media/logo.5d5d9eef.svg",
+    "static/media/map1.png": "/Karabagh/static/media/map1.12a99a32.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.062b6f36.js",
+    "static/js/runtime-main.686f1436.js",
     "static/js/2.63372e5c.chunk.js",
-    "static/css/main.3c69810e.chunk.css",
-    "static/js/main.92280901.chunk.js"
+    "static/css/main.3c76b784.chunk.css",
+    "static/js/main.2f507c2e.chunk.js"
   ]
 }
