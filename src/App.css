@@ -1,38 +1,102 @@
 .App {
   text-align: center;
+  height: 100%;
+  margin: auto;
+  overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo > img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 80px;
+  display: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#logo {
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiToolbar-root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: orangered 2px solid;
+  background-color: black;
   color: white;
+  position: fixed;
+}
+#navbarButton {
+  display: none;
+}
+#navBarLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.infoPanelImage > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100%;
+  max-width: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infoPanelImage {
+  margin: auto;
+}
+.infoPanel:first-child {
+  margin-top: 100px;
+}
+.infoPanelText {
+  margin: auto;
+}
+.infoPanel {
+  height: 100% !important;
+  max-height: 100%;
+  padding: 10px 0 10px 0;
+}
+.infoPanel:nth-child(odd) {
+  background-color: blue;
+}
+.coverPanel {
+  min-height: 800px !important;
+  text-align: center;
+}
+#coverPanelText1 {
+  margin: auto;
+  color: white;
+  font-size: 2rem;
+}
+#coverPanelText2 {
+  color: black;
+  font-size: 2rem;
+  margin: auto;
+}
+.coverPanelText {
+  width: 100%;
+}
+#coverPanel1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/monastery.jpg");
+  background-size: cover;
+}
+#coverPanel2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(148, 148, 148, 0.7),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("images/cemetary1.jpg");
+  background-size: cover;
+}
+.MuiButtonBase-root {
+  margin: auto !important;
+  margin-top: 30px !important;
+  background-color: orangered !important;
+  color: white !important;
+  font-family: ;
 }
