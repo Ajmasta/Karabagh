@@ -2,31 +2,20 @@
   text-align: center;
   height: 100%;
   margin: auto;
-  overflow-y: scroll;
 }
 
-#logo > img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  max-height: 80px;
-  display: none;
-}
-#logo {
-}
 .MuiToolbar-root {
+  padding: 0;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   font-size: 1rem;
   font-weight: 700;
-  border-bottom: orangered 2px solid;
+  border-bottom: rgb(255, 0, 0) 2px solid;
   background-color: black;
   color: white;
-  position: fixed;
 }
-#navbarButton {
-  display: none;
-}
+
 #navBarLinks {
   width: 100%;
   display: flex;
@@ -44,9 +33,17 @@
 .infoPanelImage {
   margin: auto;
 }
-.infoPanel:first-child {
-  margin-top: 100px;
+.infoPanelImage > img {
+  border-radius: 3%;
+  box-shadow: px 2px 2px inset black;
 }
+
+.infoPanelTitle {
+  border-top: black solid 1px;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
 .infoPanelText {
   margin: auto;
 }
@@ -56,7 +53,7 @@
   padding: 10px 0 10px 0;
 }
 .infoPanel:nth-child(odd) {
-  background-color: blue;
+  background-color: rgb(250, 160, 75);
 }
 .coverPanel {
   min-height: 800px !important;
@@ -96,7 +93,64 @@
 .MuiButtonBase-root {
   margin: auto !important;
   margin-top: 30px !important;
-  background-color: orangered !important;
+  background-color: rgb(255, 0, 0) !important;
   color: white !important;
-  font-family: ;
+}
+
+.historySelector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  border-bottom: 2px solid rgb(255, 0, 0);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 100%;
+}
+#helpNavBar {
+  display: flex;
+  direction: row;
+  justify-content: space-between;
+}
+
+.newsImage {
+  width: 100%;
+  height: auto;
+
+  border-radius: 1%;
+}
+.newsTiles {
+  justify-content: space-between;
+  align-content: space-around;
+}
+.newsTile {
+  border-radius: 1%;
+  background-color: white;
+  margin-top: 10px !important;
+  border-bottom: 1px solid black;
+
+  box-shadow: 2px 2px 3px black;
+}
+
+.newsTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  height: 10%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.newsText {
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  .newsTitle {
+    font-size: 1rem;
+  }
+  .newsDescription {
+    font-size: 0.8rem;
+  }
 }

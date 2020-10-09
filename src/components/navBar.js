@@ -6,22 +6,47 @@ import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 
 const NavBar = ({ setPageView }) => {
-  const screenTooSmall = false; //useMediaQuery("(max-width:600px)");
+  // const screenTooSmall = false; //useMediaQuery("(max-width:600px)");
   return (
     <AppBar position="sticky">
       <Toolbar className="navBar">
-        <Grid xs="1" container="true" id="logo">
-          <img src={logo} alt="armenian Flag" />
+        <Grid id="navBarLinks" container alignContent="center">
+          <p
+            onClick={() => {
+              setPageView("home");
+              window.scroll(0, 0);
+            }}
+          >
+            Conflict{" "}
+          </p>{" "}
+          <p
+            onClick={() => {
+              setPageView("history");
+              window.scroll(0, 0);
+            }}
+          >
+            {" "}
+            Infos{" "}
+          </p>{" "}
+          <p
+            onClick={() => {
+              setPageView("news");
+              window.scroll(0, 0);
+            }}
+          >
+            {" "}
+            News
+          </p>{" "}
+          <p
+            onClick={() => {
+              setPageView("help");
+              window.scroll(0, 0);
+            }}
+          >
+            {" "}
+            Help
+          </p>{" "}
         </Grid>
-        {screenTooSmall ? (
-          ""
-        ) : (
-          <Grid xs="11" id="navBarLinks" container="true" alignContent="center">
-            <p onClick={() => setPageView("home")}>Conflict </p>{" "}
-            <p onClick={() => setPageView("history")}> History </p>{" "}
-            <p onClick={() => setPageView("help")}> How to Help</p>{" "}
-          </Grid>
-        )}
       </Toolbar>
     </AppBar>
   );
