@@ -74,6 +74,12 @@
   min-height: 800px !important;
   text-align: center;
 }
+@media screen and (max-height: 575px) {
+  .coverPanel {
+    min-height: 600px !important;
+    text-align: center;
+  }
+}
 #coverPanelText1 {
   margin: auto;
   color: white;
@@ -184,8 +190,11 @@ a:active {
   display: flex;
   justify-content: space-between;
   padding: 0 5px 0 5px;
+  max-height: 27px;
 }
-
+#languageSelection > img {
+  max-height: 27px;
+}
 #languageArrow {
   position: fixed;
   z-index: 5;
@@ -193,5 +202,5 @@ a:active {
   right: 5px;
 }
 .MuiSvgIcon-root {
-  fill: white !important;
+  fill: red !important;
 }

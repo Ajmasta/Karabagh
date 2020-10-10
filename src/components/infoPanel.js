@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
+import { GApageView } from "./googleAnalytics";
 const InfoPanel = ({ image, imageAlt, text, title, id }) => {
+  useEffect(() => { GApageView("info"); }, []);
+
   return (
     <Grid
       container

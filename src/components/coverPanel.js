@@ -1,8 +1,9 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
+import React, { useEffect, useState } from "react";import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-
+import { GApageView } from "./googleAnalytics";
 const CoverPanel = ({ id, text, button }) => {
+  useEffect(() => { GApageView("landing"); }, []);
+
   return (
     <Grid
       container

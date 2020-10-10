@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,13 +23,15 @@ import "./App.css";
 import Help from "./components/help";
 import NewsTile from "./components/newsTile";
 
+import {initGA} from "./components/googleAnalytics"
+
 function App() {
   const text = `Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած 1500-ակ Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա`;
   const [textContent, setTextContent] = useState(texts.english);
   const [languageChoice, setLanguageChoice] = useState(true);
-
+  useEffect(()=> initGA(),[])
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <LanguagePicker
         textContent={textContent}
         setTextContent={setTextContent}

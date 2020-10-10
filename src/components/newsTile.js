@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import CoverPanel from "./coverPanel";
+import { GApageView } from "./googleAnalytics";
 
 const NewsTile = ({ image, title, description, url }) => {
+  useEffect(() => { GApageView("news"); }, []);
+
   return (
     <Grid
       xs={11}
