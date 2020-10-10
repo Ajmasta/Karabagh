@@ -6,7 +6,6 @@
 #navBarLinks > a {
   color: white !important;
   background-color: transparent;
-
   font-size: 1rem;
   font-weight: 700;
 }
@@ -14,6 +13,9 @@
   border-bottom: 3px orangered solid;
   outline: none !important;
   background-color: white;
+}
+.MuiAppBar-root {
+  z-index: 3 !important;
 }
 .MuiToolbar-root {
   padding: 0;
@@ -170,4 +172,26 @@ a:active {
   .newsDescription {
     font-size: 0.8rem;
   }
+}
+
+#languageSelection {
+  position: fixed;
+  z-index: 5;
+  bottom: 10px;
+  right: 5px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 0 5px;
+  background-color: ;
+}
+
+#languageArrow {
+  position: fixed;
+  z-index: 5;
+  bottom: 10px;
+  right: 5px;
+}
+.MuiSvgIcon-root {
+  fill: white !important;
 }

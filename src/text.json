@@ -1,0 +1,50 @@
+{
+  "english": {
+    "homepage": {
+      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
+      "Panel2": {},
+      "Panel3": {},
+      "Panel4": {}
+    },
+    "Infos": {
+      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
+      "Panel2": {},
+      "Panel3": {},
+      "Panel4": {}
+    },
+    "News": {},
+    "Help": {}
+  },
+  "french": {
+    "homepage": {
+      "Panel1": "Le 27 septembre, l'Azerbaijan declara la guerre a l'Armenie afin d'envahir le Karabagh",
+      "Panel2": {},
+      "Panel3": {},
+      "Panel4": {}
+    },
+    "Infos": {
+      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
+      "Panel2": {},
+      "Panel3": {},
+      "Panel4": {}
+    },
+    "News": {},
+    "Help": {}
+  },
+  "russian": {
+    "homepage": {
+      "Panel1": "27 сентября Азербайджан объявил войну Армении с целью вторжения в Нагорный Карабах.",
+      "Panel2": {},
+      "Panel3": {},
+      "Panel4": {}
+    },
+    "Infos": {
+      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
+      "Panel2": {},
+      "Panel3": {},
+      "Panel4": {}
+    },
+    "News": {},
+    "Help": {}
+  }
+}
