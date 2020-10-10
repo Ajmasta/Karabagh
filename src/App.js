@@ -12,7 +12,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import NavBar from "./components/navBar.js";
 import InfoPanel from "./components/infoPanel.js";
 import CoverPanel from "./components/coverPanel.js";
-
+import LanguagePicker from "./components/languagePicker.js";
 import texts from "./text.json";
 import logo from "./logo.svg";
 import map1 from "./images/map1.png";
@@ -22,6 +22,7 @@ import "./App.css";
 
 import Help from "./components/help";
 import NewsTile from "./components/newsTile";
+
 function App() {
   const text = `Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած 1500-ակ Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա`;
   const [textContent, setTextContent] = useState(texts.english);
@@ -29,62 +30,10 @@ function App() {
 
   return (
     <Router>
-      {languageChoice ? (
-        <div id="languageSelection">
-          <ArrowForwardIosIcon onClick={() => setLanguageChoice(false)} />
-          {textContent === texts.english ? (
-            <>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/800px-Flag_of_France.svg.png"
-                width="40px"
-                height="auto"
-                onClick={() => setTextContent(texts.french)}
-              ></img>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1920px-Flag_of_Russia.svg.png"
-                width="40px"
-                height="auto"
-                onClick={() => setTextContent(texts.russian)}
-              ></img>{" "}
-            </>
-          ) : textContent === texts.french ? (
-            <>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/1920px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png"
-                width="40px"
-                height="auto"
-                onClick={() => setTextContent(texts.english)}
-              ></img>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1920px-Flag_of_Russia.svg.png"
-                width="40px"
-                height="auto"
-                onClick={() => setTextContent(texts.russian)}
-              ></img>{" "}
-            </>
-          ) : (
-            <>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg/1920px-Flag_of_Great_Britain_%281707%E2%80%931800%29.svg.png"
-                width="40px"
-                height="auto"
-                onClick={() => setTextContent(texts.english)}
-              ></img>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/800px-Flag_of_France.svg.png"
-                width="40px"
-                height="auto"
-                onClick={() => setTextContent(texts.french)}
-              ></img>
-            </>
-          )}
-        </div>
-      ) : (
-        <ArrowBackIosIcon
-          id="languageArrow"
-          onClick={() => setLanguageChoice(true)}
-        />
-      )}
+      <LanguagePicker
+        textContent={textContent}
+        setTextContent={setTextContent}
+      />
       <Grid className="App" container direction="column" wrap="nowrap">
         <NavBar />
 
