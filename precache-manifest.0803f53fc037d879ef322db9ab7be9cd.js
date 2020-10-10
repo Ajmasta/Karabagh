@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71cf1e8ea361e79c74e085cb382bdae7",
+    "revision": "aca11c633ef6f6585368446b8581bf42",
     "url": "/Karabagh/index.html"
   },
   {
-    "revision": "0daf597e0764ae073e1d",
-    "url": "/Karabagh/static/css/main.2fc1bdc8.chunk.css"
+    "revision": "ecdeddbfbc7e73c36444",
+    "url": "/Karabagh/static/css/main.c4e1d05b.chunk.css"
   },
   {
-    "revision": "18179610e2f2dce1b43c",
-    "url": "/Karabagh/static/js/2.5cf834fa.chunk.js"
+    "revision": "8266ef39119a5bed5378",
+    "url": "/Karabagh/static/js/2.5a382f97.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Karabagh/static/js/2.5cf834fa.chunk.js.LICENSE.txt"
+    "url": "/Karabagh/static/js/2.5a382f97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0daf597e0764ae073e1d",
-    "url": "/Karabagh/static/js/main.0bb54de2.chunk.js"
+    "revision": "ecdeddbfbc7e73c36444",
+    "url": "/Karabagh/static/js/main.aee12f51.chunk.js"
   },
   {
     "revision": "5a4cc019915c42b83f6f",
