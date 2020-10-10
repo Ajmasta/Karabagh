@@ -14,17 +14,22 @@ const NewsTile = ({ image, title, description, url }) => {
       className="newsTile"
     >
       <Grid xs={12} sm={3} container alignItems="center" justifyItems="center">
-        <img className="newsImage" src={image} />
+        <a href={url}>
+          <img className="newsImage" src={image} />
+        </a>
       </Grid>
+
       <Grid xs={12} sm={9} container item className="newsText">
-        <Grid>
-          <a className="newsTitle" href={url}>
-            {title}
-          </a>
-        </Grid>
-        <Grid sm={12}>
-          <p className="newsDescription">{description}</p>
-        </Grid>
+        <a href={url}>
+          <Grid>
+            <a className="newsTitle" href={url}>
+              {title}
+            </a>
+          </Grid>
+          <Grid sm={12}>
+            <p className="newsDescription">{description}</p>{" "}
+          </Grid>
+        </a>
       </Grid>
     </Grid>
   );

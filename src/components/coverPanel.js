@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 
-const CoverPanel = ({ id, text, button, setPageView }) => {
+const CoverPanel = ({ id, text, button }) => {
   return (
     <Grid
       container
@@ -17,7 +17,6 @@ const CoverPanel = ({ id, text, button, setPageView }) => {
       <Button
         color="inherit"
         onClick={() => {
-          setPageView(button.link);
           window.scroll(0, 0);
         }}
       >

@@ -1,51 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/armeniaHeart.png";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
-
-const NavBar = ({ setPageView }) => {
+import { Link } from "react-router-dom";
+const NavBar = () => {
   // const screenTooSmall = false; //useMediaQuery("(max-width:600px)");
+  const [activeTab, setActiveTab] = useState("home");
+
   return (
     <AppBar position="sticky">
       <Toolbar className="navBar">
         <Grid id="navBarLinks" container alignContent="center">
-          <p
-            onClick={() => {
-              setPageView("home");
-              window.scroll(0, 0);
-            }}
+          <Link
+            to="/"
+            id={activeTab === "home" ? "activeTab" : ""}
+            onClick={() => setActiveTab("home")}
           >
             Conflict{" "}
-          </p>{" "}
-          <p
-            onClick={() => {
-              setPageView("history");
-              window.scroll(0, 0);
-            }}
+          </Link>
+          <Link
+            to="/infos"
+            id={activeTab === "infos" ? "activeTab" : ""}
+            onClick={() => setActiveTab("infos")}
           >
             {" "}
             Infos{" "}
-          </p>{" "}
-          <p
-            onClick={() => {
-              setPageView("news");
-              window.scroll(0, 0);
-            }}
+          </Link>{" "}
+          <Link
+            to="/news"
+            id={activeTab === "news" ? "activeTab" : ""}
+            onClick={() => setActiveTab("news")}
           >
             {" "}
             News
-          </p>{" "}
-          <p
-            onClick={() => {
-              setPageView("help");
-              window.scroll(0, 0);
-            }}
+          </Link>
+          <Link
+            to="/help"
+            id={activeTab === "help" ? "activeTab" : ""}
+            onClick={() => setActiveTab("help")}
           >
             {" "}
             Help
-          </p>{" "}
+          </Link>{" "}
         </Grid>
       </Toolbar>
     </AppBar>
