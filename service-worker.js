@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Karabagh/precache-manifest.705d58e9e3f2d297deac5166cb8ef41f.js"
+  "/Karabagh/precache-manifest.0d89c40c4a904e2343c592741c2df31e.js"
 );
 
 self.addEventListener('message', (event) => {
