@@ -17,33 +17,33 @@
   },
   "french": {
     "homepage": {
-      "Panel1": "Le 27 septembre, l'Azerbaijan declara la guerre a l'Armenie afin d'envahir le Karabagh",
-      "Panel2": {},
-      "Panel3": {},
+      "Panel1": ["Le 27 septembre, l'Azerbaïdjan a lancé une attaque militaire pour envahir le Nagorno-Karabagh, une région majoritairement peuplée d'Arméniens depuis des siècles"],
+      "Panel2": ["Le conflit a déjà fait des milliers de morts, dont des centaines de civils", "Nous demandons instamment aux leaders mondiaux de faire pression sur l'Azerbaïdjan et la Turquie, son allié en guerre, pour qu'ils rendent tous deux des comptes et mettent fin au conflit."],
+      "Panel3": ["Les civils arméniens vivant au Nagorno-Karabagh sont bombardés quotidiennement par l'Azerbaïdjan et des villes sont détruites."],
       "Panel4": {}
     },
-    "Infos": {
-      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
-      "Panel2": {},
-      "Panel3": {},
-      "Panel4": {}
-    },
+    "infos": {
+      "history":{
+      "Panel1": {"text":["Tout au long de l'histoire, le Karabagh (Artsakh en arménien) a été peuplé en grande majorité par des Arméniens ethniques. Dès le IIe siècle avant J.-C., il faisait partie du royaume d'Arménie", "En 1920, l'Arménie et l'Azerbaïdjan ont tous deux été soviétisés. Bien que peuplé à 94% d'Arméniens, le Karabagh a été remis à la République soviétique d'Azerbaïdjan par Staline", "Les historiens documentent les efforts de l'Azerbaïdjan pour 'azerifier' le Karabagh pendant la période soviétique, par exemple en réprimant l'usage de la langue arménienne et en supprimant l'enseignement de l'histoire arménienne dans les écoles. En dépit des multiples protestations des Arméniens du Karabagh pour être rattachés à l'Arménie, l'Azerbaïdjan a continué à avoir une autorité administrative sur la région", "Lorsque l'Union soviétique s'est effondrée, les Arméniens du Karabagh ont organisé un référendum où 99,98% des votants se sont prononcés en faveur de l'indépendance de l'Azerbaïdjan. À l'époque, les Arméniens de souche représentaient 80 % de la population du Karabagh. Pour combattre le mouvement d'indépendance, l'Azerbaïdjan a envoyé son armée, ce qui a conduit à une guerre de 6 ans. Il y a eu également un nettoyage ethnique des Arméniens vivant en Azerbaïdjan"], "title":"L'histoire derrière le conflit"},
+      "Panel2": {"text":["La guerre de 6 ans (1988-1994) a été une catastrophe humanitaire pour les Arméniens et les Azéris, avec plus de 30 000 morts et un million de civils déplacés. Un cessez-le-feu négocié par la Russie a mis un terme temporaire aux hostilités mais en l'absence de toute solution et d'accord à long terme, le conflit reste 'gelé'", "Après s'être défendu avec succès contre l'armée azérie, le Karabagh est aujourd'hui un pays indépendant de facto avec son propre gouvernement d'origine arménienne. Les Arméniens du Karabagh sont qualifiés de 'séparatistes' par l'Azerbaïdjan"],"title":"La Situation Avant le Conflit"},
+      "Panel3": {"text":["Le 27 septembre 2020, l'Azerbaïdjan a lancé une attaque militaire coordonnée à travers le territoire du Karabagh dans le but de résoudre le conflit par la force. Les Arméniens du Karabagh et l'Azerbaïdjan se battent depuis, avec déjà des centaines de civils et des milliers de soldats tués", "la Turquie, qui est responsable du génocide arménien de 1915, encourage activement l'Azerbaïdjan à poursuivre ses actions militaires et a fourni du matériel militaire, des officiers et des systèmes de guerre électronique à l'Azerbaïdjan. La Turquie a également fourni une aide financière à l'Azerbaïdjan, déjà riche en pétrole", "Ce n'est pas simplement une guerre. L'Azerbaïdjan bombarde quotidiennement les villes du Karabagh et a déjà forcé la moitié de la population de la capitale à évacuer. L'Azerbaïdjan a recruté, avec l'aide de la Turquie, des milliers de mercenaires djihadistes en provenance de Syrie pour lutter contre l'Arménie, installant ainsi le terrorisme dans la région. Ces actes sont des crimes de guerre", "Aujourd'hui, les Arméniens craignent que le fait de perdre la guerre ne conduise à un nouveau nettoyage ethnique des centaines de milliers d'Arméniens vivant au Karabagh. Cette réalité a été rappelée aux Arméniens par les mots du Premier ministre turc en juillet 2020 : 'nous finirons ce que nos grands-pères ont commencé'. Aujourd'hui, les Arméniens ethniques se battent pour se défendre et survivre alors que les Azerbaïdjanais se battent pour conquérir un territoire."],"title":"Le Conflit Actuel"}
+    }},
     "News": {},
     "Help": {}
   },
   "russian": {
     "homepage": {
-      "Panel1": "27 сентября Азербайджан объявил войну Армении с целью вторжения в Нагорный Карабах.",
-      "Panel2": {},
-      "Panel3": {},
+      "Panel1": ["27 сентября Азербайджан начал военное наступление с целью захвата Нагорного Карабаха - региона, в котором на протяжении веков проживали в основном армяне."],
+      "Panel2": ["Конфликт уже унес тысячи жизней, в том числе сотни мирных жителей Мы настоятельно призываем мир оказать давление на Азербайджан и Турцию, его жаждущего войны союзника, чтобы привлечь их к ответственности и положить конец конфликту."],
+      "Panel3": ["Армянское гражданское население, проживающее в Нагорном Карабахе, ежедневно подвергается обстрелу со стороны Азербайджана, города разрушаются."],
       "Panel4": {}
     },
-    "Infos": {
-      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
-      "Panel2": {},
-      "Panel3": {},
-      "Panel4": {}
-    },
+    "infos": {
+      "history":{
+      "Panel1": {"text":["На протяжении всей истории Карабах (Арцах на армянском языке) был в подавляющем большинстве населен этническими армянами. Уже во II веке до н.э. он входил в состав царства Армении", "В 1920 году и Армения, и Азербайджан были советизированы. Несмотря на то, что Карабах на 94% был заселен этническими армянами, он был передан Сталиным Азербайджанской Советской Республике", "Историки документируют усилия Азербайджана по 'азерификации' Карабаха в советский период, например, путем подавления использования армянского языка и подавления преподавания армянской истории в школах. Несмотря на многочисленные протесты карабахских армян против повторного присоединения к Армении, Азербайджан продолжал иметь административную власть над регионом", "Когда распался Советский Союз, карабахские армяне провели референдум, на котором 99,98% проголосовали за независимость от Азербайджана", "Историки документируют усилия Азербайджана по 'азеризации' Карабаха в советский период, например, путем подавления использования армянского языка и подавления преподавания армянской истории. В то время этнические армяне составляли 80% населения Карабаха. Для борьбы с движением за независимость Азербайджан послал свою армию, что привело к 6-летней войне. Произошла также этническая чистка армян, проживающих в Азербайджане."], "title":"История за конфликтом"},
+      "Panel2": {"text":["Шестилетняя война (1988-1994 гг.) стала гуманитарной катастрофой для армян и азербайджанцев, в результате которой погибло более 30 тыс. человек и миллион перемещенных гражданских лиц. Перемирие при посредничестве России положило временное прекращение военных действий, но при отсутствии долгосрочного решения и соглашения конфликт остается 'замороженным'", "Успешно защитившись от азербайджанской армии, Карабах сегодня является де-факто независимой страной со своим собственным правительством, состоящим из этнических армян. Азербайджан называет карабахских армян 'сепаратистами'"],"title":"Ситуация до конфликта"},
+      "Panel3": {"text":["27 сентября 2020 года Азербайджан начал скоординированное военное нападение по всей территории Карабаха с целью решения конфликта силой. С тех пор карабахские армяне и азербайджанцы ведут боевые действия, в результате которых уже погибли сотни мирных жителей и тысячи солдат", "Турция, ответственная за Геноцид армян 1915 года, активно призывает Азербайджан к продолжению военных действий и поставляет Азербайджану армейские материалы, военных офицеров и электронные боевые системы. Турция также оказала финансовую помощь и без того богатому нефтью Азербайджану", "Это не просто война. Азербайджан ежедневно обстреливает города Карабаха и уже вынудил эвакуировать половину населения столицы. Азербайджан с помощью Турции завербовал тысячи наемников-джихадистов из Сирии для борьбы с Арменией, установив в регионе терроризм. Сегодня армяне опасаются, что проигрыш войны приведет к новой этнической чистке 100 000 армян, проживающих в Карабахе. Об этой реальности армянам напомнили слова премьер-министра Турции в июле 2020 г. 'мы закончим то, что начали наши деды'. Сегодня этнические армяне сражаются, чтобы защитить себя и выжить, в то время как азербайджанцы сражаются, чтобы завоевать территорию."],"title":"Нынешний конфликт"}
+    }},
     "News": {},
     "Help": {}
   }
