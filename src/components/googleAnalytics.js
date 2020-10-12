@@ -9,3 +9,8 @@ export const initGA = () => {
   export const GApageView = (page) => {   
     ReactGA.pageview(page);   
 }
+
+
+export const GAButtonClick = () => {   
+  
+}

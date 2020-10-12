@@ -16,14 +16,16 @@ const NavBar = () => {
           <Link
             to="/"
             id={activeTab === "home" ? "activeTab" : ""}
-            onClick={() => setActiveTab("home")}
+            onClick={() => {setActiveTab("home");
+            window.scroll(0,0)}}
           >
             Conflict{" "}
           </Link>
           <Link
             to="/infos"
             id={activeTab === "infos" ? "activeTab" : ""}
-            onClick={() => setActiveTab("infos")}
+            onClick={() => {setActiveTab("infos");
+            window.scroll(0,0)}}
           >
             {" "}
             Infos{" "}
@@ -31,7 +33,8 @@ const NavBar = () => {
           <Link
             to="/news"
             id={activeTab === "news" ? "activeTab" : ""}
-            onClick={() => setActiveTab("news")}
+            onClick={() => {setActiveTab("news");
+            window.scroll(0,0)}}
           >
             {" "}
             News
@@ -39,7 +42,8 @@ const NavBar = () => {
           <Link
             to="/help"
             id={activeTab === "help" ? "activeTab" : ""}
-            onClick={() => setActiveTab("help")}
+            onClick={() => {setActiveTab("help");
+            window.scroll(0,0)}}
           >
             {" "}
             Help

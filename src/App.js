@@ -4,6 +4,7 @@ import {
   Switch,
   Route,
   useParams,
+  useHistory,
 } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -19,6 +20,7 @@ import map1 from "./images/map1.png";
 import monastery from "./images/monastery.jpg";
 import RegionalMap from "./images/RegionalMap.png";
 import "./App.css";
+import town from "./images/town.jpg"
 
 import Help from "./components/help";
 import NewsTile from "./components/newsTile";
@@ -26,6 +28,8 @@ import NewsTile from "./components/newsTile";
 import {initGA} from "./components/googleAnalytics"
 
 function App() {
+  const history = useHistory()
+  const redirect=(path)=>{history.push(path)}
   const text = `Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած 1500-ակ Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա`;
   const [textContent, setTextContent] = useState(texts.english);
   const [languageChoice, setLanguageChoice] = useState(true);
@@ -96,22 +100,26 @@ function App() {
                 {" "}
                 <h2>History</h2>{" "}
               </Grid>
+
+              {/*panel 1*/}
+
               <InfoPanel
                 image={monastery}
                 imageAlt={"logo"}
-                text={`In 1991, as the USSR fell, new countries were created. The division of countries was messy. Many problems ensued.`}
+                text={textContent.infos.history.Panel1.text}
+                title={textContent.infos.history.Panel1.title}
                 id="history"
-                title={"History"}
+          
               />
 
-              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={text} />
-              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={text} />
-              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={text} />
-              <Grid xs="12" className="infoPanelTitle">
+              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel2.text}  title={textContent.infos.history.Panel2.title} />
+              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel3.text}  title={textContent.infos.history.Panel3.title} />
+             
+             {/*<Grid xs="12" className="infoPanelTitle">
                 {" "}
                 <h2>FAQ</h2>{" "}
               </Grid>
-              <InfoPanel image={map1} imageAlt={"logo"} text={text} id="faq" />
+              <InfoPanel image={map1} imageAlt={"logo"} text={["test","test"]} id="faq" />*/}
             </>
           </Route>
           <Route path="/help">
@@ -122,24 +130,24 @@ function App() {
               <CoverPanel
                 id="1"
                 text={textContent.homepage.Panel1}
-                button={{ text: "Help", link: "help" }}
+                button={{ text: "Help", link: "/help" }}
               />
-
+                <CoverPanel
+                id="3"
+                text={
+                  textContent.homepage.Panel3
+                }
+                button={{ text: "Read The Latest News", link: "/news" }}
+              />
               <CoverPanel
                 id="2"
                 text={
-                  "The conflict has already claimed 903 lives. This year alone, 307 people have died. "
+                  textContent.homepage.Panel2
                 }
-                button={{ text: "Read More", link: "history" }}
+                button={{ text: "Learn More", link: "/infos" }}
               />
 
-              <CoverPanel
-                id="1"
-                text={
-                  "We urge world leaders to put pressure on Azerbaijan, Turkey, and Armenia to negotiate peacefully"
-                }
-                button={{ text: "Help", link: "help" }}
-              />
+            
             </>
           </Route>
         </Switch>

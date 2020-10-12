@@ -1,17 +1,17 @@
 {
   "english": {
     "homepage": {
-      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
-      "Panel2": {},
-      "Panel3": {},
+      "Panel1": ["On the 27th of September, Azerbaijan launched a military attack to invade Nagorno-Karabagh, a region majoritarily populated by Armenians for centuries."],
+      "Panel2": ["The conflict has already claimed thousands of lives, including hundred of civilian deaths.","We urge the world to put pressure on Azerbaijan and Turkey, its war-hungry ally, to hold them both accountable and put an end to the conflict."],
+      "Panel3": ["Armenian civilians living in Nagorno-Karabagh are shelled daily by Azerbaijan and cities are being destroyed."],
       "Panel4": {}
     },
-    "Infos": {
-      "Panel1": "On the 27th of September, Azerbaijan declared war on Armenia to invade Nagorno-Karabagh",
-      "Panel2": {},
-      "Panel3": {},
-      "Panel4": {}
-    },
+    "infos": {
+      "history":{
+      "Panel1": {"text":["Throughout history, Karabagh (Artsakh in Armenian) has been populated in vast majority by ethnic Armenians. As early as the 2nd century BC, it was part of the Kingdom of Armenia.","In 1920, Armenia and Azerbaijan were both sovietised. Despite being populated at 94% by ethnic Armenians, Karabagh was handed over to the Soviet Republic of Azerbaijan by Stalin.", "Historians document Azerbaijan’s efforts to “azerify” Karabagh during the Soviet period, for example by repressing the use of Armenian language and suppressing the teaching of Armenian history in schools. Despite multiple protests by Karabagh Armenians to be reattached to Armenia, Azerbaijan continued to have administrative authority over the region.","When the Soviet Union collapsed, Karabagh Armenians held a referendum where 99.98% voted in favour of independence from Azerbaijan. At that time, ethnic Armenians accounted for 80% of Karabagh’s population. To fight off the independence movement, Azerbaijan sent their army, which led to a 6-year war. There were also ethnic cleansing of Armenians living in Azerbaijan."], "title":"History Behind the Conflict"},
+      "Panel2": {"text":["The 6-year war (1988-1994) was a humanitarian disaster for Armenians and Azeris, with over 30,000 deaths and a million of displaced civilians. A ceasefire brokered by Russia put a temporary end to hostilities but in the absence of any long-term solution and agreement, the conflict remains “frozen”.","Having successfully defended itself from the Azeri army, Karabagh is today a de facto independent country with its own ethnic Armenian government. Karabagh Armenians are labelled as “separatists” by Azerbaijan."],"title":"The Situation Before the Conflict"},
+      "Panel3": {"text":["On September 27, 2020, Azerbaijan launched a coordinated military attack across the territory of Karabagh with the aim to solve the conflict through force. Karabagh Armenians and Azerbaidjan have been fighting since, with already hundreds of civilian and thousands of soldiers deaths.","Turkey, who is responsible for the Armenian Genocide of 1915, is actively encouraging Azerbaijan to pursue military actions and has supplied army materials, military officers and electronic warfare systems to Azerbaijan. Turkey has also provided financial assistance to the already oil-rich Azerbaijan.","This is not simply a war. Azerbaijan is shelling daily Karabagh’s towns and has already forced half the capital’s population to evacuate. Azerbaijan has recruited with the help of Turkey thousands of jihadist mercenaries from Syria to fight against Armenia, installing terrorism in the region. Those acts are war crimes.","Today, Armenians fear that losing the war would lead to a new ethnic cleansing of the 100,000s of Armenians living in Karabagh. Armenians were reminded of that reality by Turkey’s prime minister’s words in July 2020 “we will finish what our grandfathers started”.Today, Ethnic Armenians are fighting to defend themselves and survive whereas Azerbaijanis are fighting to conquer a territory."],"title":"Current Conflict"}
+    }},
     "News": {},
     "Help": {}
   },
