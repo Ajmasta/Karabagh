@@ -61,6 +61,8 @@
 
 .infoPanelText {
   margin: auto;
+  line-height: 215%;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .infoPanel {
   height: 100% !important;
@@ -75,9 +77,15 @@
   text-align: center;
   justify-content: center;
 }
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 700px) {
   .coverPanel {
-    min-height: 640px !important;
+    min-height: 600px !important;
+    text-align: center;
+  }
+}
+@media screen and (min-height: 701px) and (max-height: 860px) {
+  .coverPanel {
+    min-height: 700px !important;
     text-align: center;
   }
 }
@@ -134,7 +142,7 @@
     url("images/town.jpg");
   background-size: cover;
 }
-.MuiButtonBase-root {
+.coverButton {
   margin: auto !important;
   margin-top: 30px !important;
   background-color: rgb(255, 0, 0) !important;
@@ -241,4 +249,23 @@ a:active {
 }
 .helpLinks:visited {
   color: grey;
+}
+
+.accordionTab {
+  background-color: rgb(250, 160, 75) !important;
+  max-width: 1400px;
+  margin: auto;
+}
+.accordionSummary {
+  font-weight: 600;
+}
+.accordionDetails {
+  background-color: white;
+}
+.expandIcon {
+  fill: black !important;
+}
+.infosPage {
+  justify-content: center;
+  margin: auto;
 }

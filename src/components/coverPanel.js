@@ -24,6 +24,7 @@ const CoverPanel = ({ id, text, button }) => {
       <Button
         color="inherit"
         onClick={()=>redirect(button.link)}
+        className="coverButton"
       >
         {" "}
         {button.text}{" "}

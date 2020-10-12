@@ -9,6 +9,10 @@ import {
 import Grid from "@material-ui/core/Grid";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import NavBar from "./components/navBar.js";
 import InfoPanel from "./components/infoPanel.js";
@@ -33,6 +37,8 @@ function App() {
   const text = `Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է: Սկսած 1500-ակ Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա Lorem Ipsum-ը տպագրության և տպագրական արդյունաբերության հա`;
   const [textContent, setTextContent] = useState(texts.english);
   const [languageChoice, setLanguageChoice] = useState(true);
+  const [expanded,setExpanded] = useState(false)
+  const handleTabChange = (panel) => (event, newExpanded)=> { setExpanded(newExpanded? panel:false)}
   useEffect(()=> initGA(),[])
   return (
     <Router basename={process.env.PUBLIC_URL}>
@@ -73,54 +79,52 @@ function App() {
             </Grid>
           </Route>
           <Route path="/infos">
-            <>
-              <Grid className="historySelector">
-                <p
-                  onClick={() => {
-                    const element = document.getElementById("history");
-                    element.scrollIntoView({
-                      behavior: "smooth",
-                      block: "end",
-                      inline: "nearest",
-                    });
-                  }}
-                >
-                  History
-                </p>
-                <p
-                  onClick={() => {
-                    const element = document.getElementById("faq");
-                    element.scrollIntoView();
-                  }}
-                >
-                  FAQ
-                </p>
-              </Grid>
+            <Grid container  className="infosPage" justifyContent="center">
+        
               <Grid xs="12" className="infoPanelTitle">
                 {" "}
                 <h2>History</h2>{" "}
               </Grid>
 
               {/*panel 1*/}
-
-              <InfoPanel
-                image={monastery}
-                imageAlt={"logo"}
-                text={textContent.infos.history.Panel1.text}
-                title={textContent.infos.history.Panel1.title}
-                id="history"
-          
-              />
-
-              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel2.text}  title={textContent.infos.history.Panel2.title} />
-              <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel3.text}  title={textContent.infos.history.Panel3.title} />
-             
+            
+              <Accordion expanded={expanded ==="panel1"} onChange={handleTabChange("panel1")} className="accordionTab" >
+              <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon" />}>{textContent.infos.history.Panel1.title} </AccordionSummary>
+                <AccordionDetails className="accordionDetails">
+                  <InfoPanel
+                    image={monastery}
+                    imageAlt={"logo"}
+                    text={textContent.infos.history.Panel1.text}
+                    id="history"
+              
+                  />
+                </AccordionDetails>
+              </Accordion>
+         
+         
+              <Accordion expanded={expanded ==="panel2"} onChange={handleTabChange("panel2")} className="accordionTab" >
+                <AccordionSummary className="accordionSummary"  expandIcon={<ExpandMoreIcon className="expandIcon" />}>{textContent.infos.history.Panel2.title}</AccordionSummary>
+                <AccordionDetails className="accordionDetails">
+                    <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel2.text}/>
+                </AccordionDetails>
+              </Accordion>
+           
+           
+              <Accordion expanded={expanded ==="panel3"} onChange={handleTabChange("panel3")} className="accordionTab"  >
+              <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon"/>}>{textContent.infos.history.Panel3.title}</AccordionSummary>
+                <AccordionDetails className="accordionDetails" >
+                  <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel3.text}/>
+                </AccordionDetails>
+               </Accordion>
+ 
+ 
+            
              {/*<Grid xs="12" className="infoPanelTitle">
                 {" "}
                 <h2>FAQ</h2>{" "}
               </Grid>
               <InfoPanel image={map1} imageAlt={"logo"} text={["test","test"]} id="faq" />*/}
-            </>
+            </Grid>
           </Route>
           <Route path="/help">
             <Help />

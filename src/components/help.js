@@ -54,7 +54,7 @@ const Help = () => {
 
       <h3> Donate to the Armenian Fund</h3>
       
-      <div id="donateButton"><a href="https://www.himnadram.org/en"><Button>Donate</Button></a>
+      <div id="donateButton"><a href="https://www.himnadram.org/en"><Button className="coverButton">Donate</Button></a>
         <p>
         The Armenian Fund aims to provide help with health services, infrastuctures, rural development and housing to Armenians and the people of Karabagh. Making a donation helps the people of Karabagh to rebuild their country and survive. 
         </p>
