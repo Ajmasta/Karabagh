@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/Karabagh/static/css/main.c4e1d05b.chunk.css",
-    "main.js": "/Karabagh/static/js/main.cc988b56.chunk.js",
-    "main.js.map": "/Karabagh/static/js/main.cc988b56.chunk.js.map",
+    "main.css": "/Karabagh/static/css/main.adbbb7ae.chunk.css",
+    "main.js": "/Karabagh/static/js/main.53dab5ce.chunk.js",
+    "main.js.map": "/Karabagh/static/js/main.53dab5ce.chunk.js.map",
     "runtime-main.js": "/Karabagh/static/js/runtime-main.686f1436.js",
     "runtime-main.js.map": "/Karabagh/static/js/runtime-main.686f1436.js.map",
-    "static/js/2.5a382f97.chunk.js": "/Karabagh/static/js/2.5a382f97.chunk.js",
-    "static/js/2.5a382f97.chunk.js.map": "/Karabagh/static/js/2.5a382f97.chunk.js.map",
+    "static/js/2.7eb3f9b3.chunk.js": "/Karabagh/static/js/2.7eb3f9b3.chunk.js",
+    "static/js/2.7eb3f9b3.chunk.js.map": "/Karabagh/static/js/2.7eb3f9b3.chunk.js.map",
     "index.html": "/Karabagh/index.html",
-    "precache-manifest.4c8ed9366920990a7a0426d90cf44f2c.js": "/Karabagh/precache-manifest.4c8ed9366920990a7a0426d90cf44f2c.js",
+    "precache-manifest.36433cec72674f865ee737201f3311af.js": "/Karabagh/precache-manifest.36433cec72674f865ee737201f3311af.js",
     "service-worker.js": "/Karabagh/service-worker.js",
-    "static/css/main.c4e1d05b.chunk.css.map": "/Karabagh/static/css/main.c4e1d05b.chunk.css.map",
-    "static/js/2.5a382f97.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.5a382f97.chunk.js.LICENSE.txt",
+    "static/css/main.adbbb7ae.chunk.css.map": "/Karabagh/static/css/main.adbbb7ae.chunk.css.map",
+    "static/js/2.7eb3f9b3.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.7eb3f9b3.chunk.js.LICENSE.txt",
     "static/media/RegionalMap.png": "/Karabagh/static/media/RegionalMap.6401acae.png",
     "static/media/armeniaHeart.png": "/Karabagh/static/media/armeniaHeart.b31a9946.png",
     "static/media/App.css": "/Karabagh/static/media/monastery.8226e90d.jpg",
     "static/media/logo.svg": "/Karabagh/static/media/logo.5d5d9eef.svg",
-    "static/media/map1.png": "/Karabagh/static/media/map1.12a99a32.png"
+    "static/media/map1.png": "/Karabagh/static/media/map1.12a99a32.png",
+    "static/media/town.jpg": "/Karabagh/static/media/town.fd5495a4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.686f1436.js",
-    "static/js/2.5a382f97.chunk.js",
-    "static/css/main.c4e1d05b.chunk.css",
-    "static/js/main.cc988b56.chunk.js"
+    "static/js/2.7eb3f9b3.chunk.js",
+    "static/css/main.adbbb7ae.chunk.css",
+    "static/js/main.53dab5ce.chunk.js"
   ]
 }
