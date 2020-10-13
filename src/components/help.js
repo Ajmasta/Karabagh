@@ -84,7 +84,7 @@ const Help = ({textContent}) => {
           <p> Europe: <a className="helpLinks"  href="https://www.consilium.europa.eu/en/contact/general-enquiries/send-message/?IsPresident=true&__cf_chl_jschl_tk__=5243439a02c1d4054d9a6a16f9da7de5252b61c3-1602566947-0-AdSepdZw7bsaaPyUN4N5SnzVS4xs0-UsK_lLKivAOfi1REtWGrOBI5BdvU5GKesLxxIJcQWNQCFz1wPkGfrDFKLMvZPTuOqjPtPpfPPAJFXpE5uAXNnX3svzZS5xMbw-AyrgUOxMG6tLBwWt7BkwzbLvbzDOeVDYX9vdJHBYfUl1iBiFtb4QO8DrU82CFt6kL_us5SslcqXUk82VyyX7EYqMjp11Yfz4oJdc-duKfup0Ki9LS2Elc6faP_tLWjdH263TBLt3HXU6rhzmhJq9dAiuVZLrPAaqkR44wtR_994FXUX1mPblVKf_NHzHaqqpTL2JQjY-g6LejkXPyRio0kS5aKnt8S1D4bmPwwuwlgK6"> European Council</a></p>
           <Button className="coverButton" onClick={()=>setLetterVisible(!letterVisible)}> {textContent.help.buttons[1]} </Button>  {letterVisible? <div style={{border:"1px solid black"}} >{textContent.help.letter.map(sentence=> <p> {sentence}</p>)} </div>:""}
 
-          <h3>{textContent.help.titles[1]}</h3>
+          <h3>{textContent.help.titles[2]}</h3>
           <p> {textContent.help.explanation[3]}</p>
       </Grid>
    

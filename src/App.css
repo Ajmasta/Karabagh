@@ -176,10 +176,11 @@
   border-radius: 1%;
 }
 .newsTiles {
-  justify-content: space-between;
+  justify-content: center;
   align-content: space-around;
 }
 .newsTile {
+  margin: auto;
   border-radius: 1%;
   background-color: white;
   margin-top: 10px !important;
@@ -187,6 +188,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   box-shadow: 3px 3px 4px black;
   border: 1px solid black;
+  justify-content: center;
 }
 .newsTile:hover {
   background-color: rgb(250, 160, 75);

@@ -16,9 +16,9 @@ const CoverPanel = ({ id, text, button }) => {
   
     >
     <Grid item xs={9}>
-      <p className="coverPanelText" id={`coverPanelText${id}`}>
+      <span className="coverPanelText" id={`coverPanelText${id}`}>
         {text.map(sentences=> <p>{sentences} </p>)}
-      </p>
+      </span>
       </Grid>
       <Grid item xs={12}>
       <Button
