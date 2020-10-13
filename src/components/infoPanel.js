@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { GApageView } from "./googleAnalytics";
 const InfoPanel = ({ image, imageAlt, text, title, id }) => {
   useEffect(() => { GApageView("info"); }, []);
-  console.log(text)
+
   return (
     <Grid
       container
@@ -12,11 +12,11 @@ const InfoPanel = ({ image, imageAlt, text, title, id }) => {
       alignContent="center"
       id={id}
     >
-      <Grid xs={11} sm={4} className="infoPanelText" justifyContent="center">
+      <Grid item xs={11} sm={4} className="infoPanelText" >
       <h2>{title} </h2>
-        <div> {text.map(sentence => <p> {sentence} </p>)}</div>
+        <div> {text.map((sentence,i)=> <p key={i}> {sentence} </p>)}</div>
       </Grid>
-      <Grid xs={11} sm={6} className="infoPanelImage">
+      <Grid  xs={11} sm={6} className="infoPanelImage">
         <img src={image} alt={imageAlt}></img>
       </Grid>
     </Grid>

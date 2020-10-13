@@ -5,7 +5,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
 import { Link } from "react-router-dom";
-const NavBar = () => {
+
+const NavBar = ({textContent}) => {
   // const screenTooSmall = false; //useMediaQuery("(max-width:600px)");
   const [activeTab, setActiveTab] = useState("home");
 
@@ -19,7 +20,7 @@ const NavBar = () => {
             onClick={() => {setActiveTab("home");
             window.scroll(0,0)}}
           >
-            Conflict{" "}
+            {textContent.navBar[0]}
           </Link>
           <Link
             to="/infos"
@@ -27,8 +28,8 @@ const NavBar = () => {
             onClick={() => {setActiveTab("infos");
             window.scroll(0,0)}}
           >
-            {" "}
-            Infos{" "}
+          
+            {textContent.navBar[1]}
           </Link>{" "}
           <Link
             to="/news"
@@ -37,7 +38,7 @@ const NavBar = () => {
             window.scroll(0,0)}}
           >
             {" "}
-            News
+            {textContent.navBar[2]}
           </Link>
           <Link
             to="/help"
@@ -45,8 +46,8 @@ const NavBar = () => {
             onClick={() => {setActiveTab("help");
             window.scroll(0,0)}}
           >
-            {" "}
-            Help
+            <span style={{color:"white"}} >  {textContent.navBar[3]}</span>
+          
           </Link>{" "}
         </Grid>
       </Toolbar>

@@ -17,6 +17,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import NavBar from "./components/navBar.js";
 import InfoPanel from "./components/infoPanel.js";
 import CoverPanel from "./components/coverPanel.js";
+import FaqPanel from "./components/faqPanel"
 import LanguagePicker from "./components/languagePicker.js";
 import texts from "./text.json";
 import logo from "./logo.svg";
@@ -40,6 +41,15 @@ function App() {
   const [expanded,setExpanded] = useState(false)
   const handleTabChange = (panel) => (event, newExpanded)=> { setExpanded(newExpanded? panel:false)}
   useEffect(()=> initGA(),[])
+  const newsGenerator = () => {
+   
+    let newsPage = []
+    for(let i=1;i<=16;i++){
+     
+      newsPage.push(<NewsTile key={i} image={textContent.news[i].image} description={textContent.news[i].description} title={textContent.news[i].title} url={textContent.news[i].url} />)
+    }
+    return newsPage
+  }
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <LanguagePicker
@@ -47,43 +57,20 @@ function App() {
         setTextContent={setTextContent}
       />
       <Grid className="App" container direction="column" wrap="nowrap">
-        <NavBar />
+        <NavBar textContent={textContent} />
 
         <Switch>
           <Route path="/news">
             <Grid container direction="column" className="newsTiles">
-              <NewsTile
-                title={"France, U.S. and Russia to meet on Nagorno-Karabakh"}
-                description={
-                  "France, the United States and Russia will step up efforts to end fighting between Azeri and ethnic Armenian forces in the South Caucasus by holding talks in Geneva on Thursday, as fears of a regional war grow."
-                }
-                url={
-                  "https://www.reuters.com/article/us-armenia-azerbaijan/france-us-and-russia-to-meet-on-nagorno-karabakh-amid-fears-of-regional-war-idUSKBN26S1F2"
-                }
-                image={
-                  "https://static.reuters.com/resources/r/?m=02&d=20201007&t=2&i=1536576497&r=LYNXMPEG9622M"
-                }
-              />
-              <NewsTile
-                title={"France, U.S. and Russia to meet on Nagorno-Karabakh"}
-                description={
-                  "France, the United States and Russia will step up efforts to end fighting between Azeri and ethnic Armenian forces in the South Caucasus by holding talks in Geneva on Thursday, as fears of a regional war grow."
-                }
-                url={
-                  "https://www.reuters.com/article/us-armenia-azerbaijan/france-us-and-russia-to-meet-on-nagorno-karabakh-amid-fears-of-regional-war-idUSKBN26S1F2"
-                }
-                image={
-                  "https://static.reuters.com/resources/r/?m=02&d=20201007&t=2&i=1536576497&r=LYNXMPEG9622M"
-                }
-              />
+            { newsGenerator()}
             </Grid>
           </Route>
           <Route path="/infos">
-            <Grid container  className="infosPage" justifyContent="center">
+            <Grid container  className="infosPage" >
         
-              <Grid xs="12" className="infoPanelTitle">
+              <Grid item xs={12} className="infoPanelTitle">
                 {" "}
-                <h2>History</h2>{" "}
+                <h2>{textContent.infos.history.title}</h2>{" "}
               </Grid>
 
               {/*panel 1*/}
@@ -119,36 +106,71 @@ function App() {
  
  
             
-             {/*<Grid xs="12" className="infoPanelTitle">
+             <Grid xs={12} className="infoPanelTitle">
                 {" "}
-                <h2>FAQ</h2>{" "}
+                <h2>{textContent.infos.faq.title}</h2>{" "}
               </Grid>
-              <InfoPanel image={map1} imageAlt={"logo"} text={["test","test"]} id="faq" />*/}
+              <Accordion expanded={expanded ==="panel4"} onChange={handleTabChange("panel4")} className="accordionTab" >
+              <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon" />}>{textContent.infos.faq.Panel1.title} </AccordionSummary>
+                <AccordionDetails className="accordionDetails">
+                  <FaqPanel
+                    image={monastery}
+                    imageAlt={"logo"}
+                    text={textContent.infos.faq.Panel1.text}
+                    id="history"
+              
+                  />
+                </AccordionDetails>
+              </Accordion>
+         
+         
+              <Accordion expanded={expanded ==="panel5"} onChange={handleTabChange("panel5")} className="accordionTab" >
+                <AccordionSummary className="accordionSummary"  expandIcon={<ExpandMoreIcon className="expandIcon" />}>{textContent.infos.faq.Panel2.title}</AccordionSummary>
+                <AccordionDetails className="accordionDetails">
+                    <FaqPanel  text={textContent.infos.faq.Panel2.text}/>
+                </AccordionDetails>
+              </Accordion>
+           
+           
+              <Accordion expanded={expanded ==="panel6"} onChange={handleTabChange("panel6")} className="accordionTab"  >
+              <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon"/>}>{textContent.infos.faq.Panel3.title}</AccordionSummary>
+                <AccordionDetails className="accordionDetails" >
+                  <FaqPanel text={textContent.infos.faq.Panel3.text}/>
+                </AccordionDetails>
+               </Accordion>
+
+               <Accordion expanded={expanded ==="panel7"} onChange={handleTabChange("panel7")} className="accordionTab"  >
+              <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon"/>}>{textContent.infos.faq.Panel4.title}</AccordionSummary>
+                <AccordionDetails className="accordionDetails" >
+                  <FaqPanel  text={textContent.infos.faq.Panel4.text}/>
+                </AccordionDetails>
+               </Accordion>
+
             </Grid>
           </Route>
           <Route path="/help">
-            <Help />
+            <Help textContent={textContent} />
           </Route>
           <Route path="/">
             <>
               <CoverPanel
                 id="1"
                 text={textContent.homepage.Panel1}
-                button={{ text: "Help", link: "/help" }}
+                button={{ text: textContent.homepage.buttons[0], link: "/help" }}
               />
                 <CoverPanel
                 id="3"
                 text={
                   textContent.homepage.Panel3
                 }
-                button={{ text: "Read The Latest News", link: "/news" }}
+                button={{ text:  textContent.homepage.buttons[1], link: "/news" }}
               />
               <CoverPanel
                 id="2"
                 text={
                   textContent.homepage.Panel2
                 }
-                button={{ text: "Learn More", link: "/infos" }}
+                button={{ text:  textContent.homepage.buttons[2], link: "/infos" }}
               />
 
             

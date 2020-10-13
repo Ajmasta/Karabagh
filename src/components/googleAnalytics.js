@@ -11,6 +11,8 @@ export const initGA = () => {
 }
 
 
-export const GAButtonClick = () => {   
-  
+export const GAButtonClick = (category,action,label) => {   
+  ReactGA.event({
+    category,action,label
+  })
 }
