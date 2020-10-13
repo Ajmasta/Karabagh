@@ -40,6 +40,17 @@ function App() {
   const [languageChoice, setLanguageChoice] = useState(true);
   const [expanded,setExpanded] = useState(false)
   const handleTabChange = (panel) => (event, newExpanded)=> { setExpanded(newExpanded? panel:false)}
+
+  const createAccordion = (text,title,id) => { 
+    return (
+      <Accordion expanded={expanded ===id} onChange={handleTabChange(id)} className="accordionTab"  >
+      <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon"/>}>{title}</AccordionSummary>
+        <AccordionDetails className="accordionDetails" >
+          <FaqPanel text={text}/>
+        </AccordionDetails>
+       </Accordion>
+    )
+  }
   const setLanguage = () => 
 {
   const language = navigator.language
@@ -121,18 +132,21 @@ function App() {
                 {" "}
                 <h2>{textContent.infos.faq.title}</h2>{" "}
               </Grid>
-              <Accordion expanded={expanded ==="panel4"} onChange={handleTabChange("panel4")} className="accordionTab" >
-              <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon" />}>{textContent.infos.faq.Panel1.title} </AccordionSummary>
-                <AccordionDetails className="accordionDetails">
-                  <FaqPanel
-                    image={monastery}
-                    imageAlt={"logo"}
-                    text={textContent.infos.faq.Panel1.text}
-                    id="history"
+              {/* FAQ START */}
+              {createAccordion(textContent.infos.faq.Panel5.text,textContent.infos.faq.Panel5.title,"panel5" )}
+              {createAccordion(textContent.infos.faq.Panel6.text,textContent.infos.faq.Panel6.title,"panel6" )}
+              {createAccordion(textContent.infos.faq.Panel7.text,textContent.infos.faq.Panel7.title,"panel7" )}
+              {createAccordion(textContent.infos.faq.Panel8.text,textContent.infos.faq.Panel8.title,"panel8" )}
+              {createAccordion(textContent.infos.faq.Panel9.text,textContent.infos.faq.Panel9.title,"panel9" )}
+              {createAccordion(textContent.infos.faq.Panel10.text,textContent.infos.faq.Panel10.title,"panel10" )}
+              {createAccordion(textContent.infos.faq.Panel11.text,textContent.infos.faq.Panel11.title,"panel11" )}
+              {createAccordion(textContent.infos.faq.Panel12.text,textContent.infos.faq.Panel12.title,"panel12" )}
+              {createAccordion(textContent.infos.faq.Panel1.text,textContent.infos.faq.Panel1.title,"panel1" )}
+              {createAccordion(textContent.infos.faq.Panel2.text,textContent.infos.faq.Panel2.title,"panel2" )}
+              {createAccordion(textContent.infos.faq.Panel3.text,textContent.infos.faq.Panel3.title,"panel3" )}
+              {createAccordion(textContent.infos.faq.Panel4.text,textContent.infos.faq.Panel4.title,"panel4" )}
               
-                  />
-                </AccordionDetails>
-              </Accordion>
+
          
          
               <Accordion expanded={expanded ==="panel5"} onChange={handleTabChange("panel5")} className="accordionTab" >
