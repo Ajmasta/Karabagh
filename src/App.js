@@ -40,7 +40,18 @@ function App() {
   const [languageChoice, setLanguageChoice] = useState(true);
   const [expanded,setExpanded] = useState(false)
   const handleTabChange = (panel) => (event, newExpanded)=> { setExpanded(newExpanded? panel:false)}
-  useEffect(()=> initGA(),[])
+  const setLanguage = () => 
+{
+  const language = navigator.language
+  console.log(language)
+  if (language.includes("en")) return setTextContent(texts.english)
+  if (language.includes("fr")) return setTextContent(texts.french)
+  if (language.includes("ru")) return setTextContent(texts.russian)
+  return ""
+}
+  useEffect(()=> {
+    setLanguage()
+    initGA()},[])
   const newsGenerator = () => {
    
     let newsPage = []

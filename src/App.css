@@ -178,6 +178,12 @@
 .newsTiles {
   justify-content: center;
   align-content: space-around;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
 }
 .newsTile {
   margin: auto;
@@ -189,6 +195,12 @@
   box-shadow: 3px 3px 4px black;
   border: 1px solid black;
   justify-content: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
 }
 .newsTile:hover {
   background-color: rgb(250, 160, 75);
