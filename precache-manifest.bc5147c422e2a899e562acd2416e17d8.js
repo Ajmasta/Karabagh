@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd33771f9d9c2b77cfd3bc6c9de19b71",
+    "revision": "2a241976124edae1e51b8b811f8bcb0c",
     "url": "/Karabagh/index.html"
   },
   {
-    "revision": "d8111fd7e78ca1c027e2",
-    "url": "/Karabagh/static/css/main.36239af5.chunk.css"
+    "revision": "7e639e6591cd3e22bb65",
+    "url": "/Karabagh/static/css/main.3b0d8b21.chunk.css"
   },
   {
-    "revision": "f51a02d1b6cd15e4854c",
-    "url": "/Karabagh/static/js/2.e81ff69f.chunk.js"
+    "revision": "13affd64d018e985487b",
+    "url": "/Karabagh/static/js/2.4d074549.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Karabagh/static/js/2.e81ff69f.chunk.js.LICENSE.txt"
+    "url": "/Karabagh/static/js/2.4d074549.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d8111fd7e78ca1c027e2",
-    "url": "/Karabagh/static/js/main.c39f3866.chunk.js"
+    "revision": "7e639e6591cd3e22bb65",
+    "url": "/Karabagh/static/js/main.14b50501.chunk.js"
   },
   {
     "revision": "5a4cc019915c42b83f6f",
