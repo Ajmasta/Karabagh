@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Karabagh/static/css/main.ce29517c.chunk.css",
-    "main.js": "/Karabagh/static/js/main.0344be1f.chunk.js",
-    "main.js.map": "/Karabagh/static/js/main.0344be1f.chunk.js.map",
+    "main.css": "/Karabagh/static/css/main.cc7de9fa.chunk.css",
+    "main.js": "/Karabagh/static/js/main.5e79e796.chunk.js",
+    "main.js.map": "/Karabagh/static/js/main.5e79e796.chunk.js.map",
     "runtime-main.js": "/Karabagh/static/js/runtime-main.686f1436.js",
     "runtime-main.js.map": "/Karabagh/static/js/runtime-main.686f1436.js.map",
-    "static/js/2.2fa7c598.chunk.js": "/Karabagh/static/js/2.2fa7c598.chunk.js",
-    "static/js/2.2fa7c598.chunk.js.map": "/Karabagh/static/js/2.2fa7c598.chunk.js.map",
+    "static/js/2.e81ff69f.chunk.js": "/Karabagh/static/js/2.e81ff69f.chunk.js",
+    "static/js/2.e81ff69f.chunk.js.map": "/Karabagh/static/js/2.e81ff69f.chunk.js.map",
     "index.html": "/Karabagh/index.html",
-    "precache-manifest.0d89c40c4a904e2343c592741c2df31e.js": "/Karabagh/precache-manifest.0d89c40c4a904e2343c592741c2df31e.js",
+    "precache-manifest.ede751248c2cc633dec5dbdcdfb83bc8.js": "/Karabagh/precache-manifest.ede751248c2cc633dec5dbdcdfb83bc8.js",
     "service-worker.js": "/Karabagh/service-worker.js",
-    "static/css/main.ce29517c.chunk.css.map": "/Karabagh/static/css/main.ce29517c.chunk.css.map",
-    "static/js/2.2fa7c598.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.2fa7c598.chunk.js.LICENSE.txt",
+    "static/css/main.cc7de9fa.chunk.css.map": "/Karabagh/static/css/main.cc7de9fa.chunk.css.map",
+    "static/js/2.e81ff69f.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.e81ff69f.chunk.js.LICENSE.txt",
     "static/media/RegionalMap.png": "/Karabagh/static/media/RegionalMap.6401acae.png",
     "static/media/armeniaHeart.png": "/Karabagh/static/media/armeniaHeart.b31a9946.png",
     "static/media/App.css": "/Karabagh/static/media/monastery.8226e90d.jpg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.686f1436.js",
-    "static/js/2.2fa7c598.chunk.js",
-    "static/css/main.ce29517c.chunk.css",
-    "static/js/main.0344be1f.chunk.js"
+    "static/js/2.e81ff69f.chunk.js",
+    "static/css/main.cc7de9fa.chunk.css",
+    "static/js/main.5e79e796.chunk.js"
   ]
 }
