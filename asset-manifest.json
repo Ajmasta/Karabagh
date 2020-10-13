@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Karabagh/static/css/main.4044c332.chunk.css",
-    "main.js": "/Karabagh/static/js/main.9520ffb6.chunk.js",
-    "main.js.map": "/Karabagh/static/js/main.9520ffb6.chunk.js.map",
+    "main.css": "/Karabagh/static/css/main.36239af5.chunk.css",
+    "main.js": "/Karabagh/static/js/main.c39f3866.chunk.js",
+    "main.js.map": "/Karabagh/static/js/main.c39f3866.chunk.js.map",
     "runtime-main.js": "/Karabagh/static/js/runtime-main.686f1436.js",
     "runtime-main.js.map": "/Karabagh/static/js/runtime-main.686f1436.js.map",
     "static/js/2.e81ff69f.chunk.js": "/Karabagh/static/js/2.e81ff69f.chunk.js",
     "static/js/2.e81ff69f.chunk.js.map": "/Karabagh/static/js/2.e81ff69f.chunk.js.map",
     "index.html": "/Karabagh/index.html",
-    "precache-manifest.4f188b56344c55900064e228a4e27e97.js": "/Karabagh/precache-manifest.4f188b56344c55900064e228a4e27e97.js",
+    "precache-manifest.7aec5d73b3da082cfbedd12c4fb7b84e.js": "/Karabagh/precache-manifest.7aec5d73b3da082cfbedd12c4fb7b84e.js",
     "service-worker.js": "/Karabagh/service-worker.js",
-    "static/css/main.4044c332.chunk.css.map": "/Karabagh/static/css/main.4044c332.chunk.css.map",
+    "static/css/main.36239af5.chunk.css.map": "/Karabagh/static/css/main.36239af5.chunk.css.map",
     "static/js/2.e81ff69f.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.e81ff69f.chunk.js.LICENSE.txt",
     "static/media/RegionalMap.png": "/Karabagh/static/media/RegionalMap.6401acae.png",
     "static/media/armeniaHeart.png": "/Karabagh/static/media/armeniaHeart.b31a9946.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.686f1436.js",
     "static/js/2.e81ff69f.chunk.js",
-    "static/css/main.4044c332.chunk.css",
-    "static/js/main.9520ffb6.chunk.js"
+    "static/css/main.36239af5.chunk.css",
+    "static/js/main.c39f3866.chunk.js"
   ]
 }
