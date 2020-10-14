@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Karabagh/static/css/main.7105e301.chunk.css",
-    "main.js": "/Karabagh/static/js/main.d3ea7012.chunk.js",
-    "main.js.map": "/Karabagh/static/js/main.d3ea7012.chunk.js.map",
+    "main.js": "/Karabagh/static/js/main.6894115d.chunk.js",
+    "main.js.map": "/Karabagh/static/js/main.6894115d.chunk.js.map",
     "runtime-main.js": "/Karabagh/static/js/runtime-main.686f1436.js",
     "runtime-main.js.map": "/Karabagh/static/js/runtime-main.686f1436.js.map",
     "static/js/2.0558364e.chunk.js": "/Karabagh/static/js/2.0558364e.chunk.js",
     "static/js/2.0558364e.chunk.js.map": "/Karabagh/static/js/2.0558364e.chunk.js.map",
     "index.html": "/Karabagh/index.html",
-    "precache-manifest.4628817c2ee3ca8e32e80965008437a6.js": "/Karabagh/precache-manifest.4628817c2ee3ca8e32e80965008437a6.js",
+    "precache-manifest.5b8f95c9a2c2ecfa82a68ef810d9ad08.js": "/Karabagh/precache-manifest.5b8f95c9a2c2ecfa82a68ef810d9ad08.js",
     "service-worker.js": "/Karabagh/service-worker.js",
     "static/css/main.7105e301.chunk.css.map": "/Karabagh/static/css/main.7105e301.chunk.css.map",
     "static/js/2.0558364e.chunk.js.LICENSE.txt": "/Karabagh/static/js/2.0558364e.chunk.js.LICENSE.txt",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.686f1436.js",
     "static/js/2.0558364e.chunk.js",
     "static/css/main.7105e301.chunk.css",
-    "static/js/main.d3ea7012.chunk.js"
+    "static/js/main.6894115d.chunk.js"
   ]
 }
