@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../images/armeniaHeart.png";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -9,6 +9,18 @@ import { Link } from "react-router-dom";
 const NavBar = ({textContent}) => {
   // const screenTooSmall = false; //useMediaQuery("(max-width:600px)");
   const [activeTab, setActiveTab] = useState("home");
+  const path = window.location.pathname
+  const activeTabDeterminator = () => {
+   
+    if (path.includes("help")) setActiveTab("help")
+    if (path.includes("infos")) setActiveTab("infos")
+    if (path.includes("news")) setActiveTab("news")
+
+  }
+  useEffect(()=>{
+   activeTabDeterminator()
+
+},[path])
 
   return (
     <AppBar position="sticky">

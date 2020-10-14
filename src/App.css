@@ -290,3 +290,6 @@ a:active {
   justify-content: center;
   margin: auto;
 }
+.MuiAccordionSummary-root {
+  text-align: left;
+}
