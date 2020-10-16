@@ -201,6 +201,7 @@
   -webkit-justify-content: center;
   align-items: center;
   -webkit-align-items: center;
+  justify-self: center;
 }
 .newsTile:hover {
   background-color: rgb(250, 160, 75);
@@ -279,6 +280,10 @@ a:active {
 }
 .accordionSummary {
   font-weight: 600;
+}
+
+.accordionTab:nth-child(2n + 1) {
+  background-color: rgb(238, 121, 53) !important;
 }
 .accordionDetails {
   background-color: white;
