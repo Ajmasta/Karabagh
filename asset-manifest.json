@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.7dd3abf4.chunk.css",
-    "main.js": "/static/js/main.1b18fbde.chunk.js",
-    "main.js.map": "/static/js/main.1b18fbde.chunk.js.map",
+    "main.js": "/static/js/main.25dcadc4.chunk.js",
+    "main.js.map": "/static/js/main.25dcadc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.677f2e1f.js",
     "runtime-main.js.map": "/static/js/runtime-main.677f2e1f.js.map",
     "static/js/2.038b3447.chunk.js": "/static/js/2.038b3447.chunk.js",
     "static/js/2.038b3447.chunk.js.map": "/static/js/2.038b3447.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bd7bd37b7a6ab56a4dc686bb16732d9f.js": "/precache-manifest.bd7bd37b7a6ab56a4dc686bb16732d9f.js",
+    "precache-manifest.e589b667cddac817b23efd8bec4ca461.js": "/precache-manifest.e589b667cddac817b23efd8bec4ca461.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.7dd3abf4.chunk.css.map": "/static/css/main.7dd3abf4.chunk.css.map",
     "static/js/2.038b3447.chunk.js.LICENSE.txt": "/static/js/2.038b3447.chunk.js.LICENSE.txt",
@@ -16,7 +16,7 @@
     "static/media/RegionalMap.png": "/static/media/RegionalMap.6401acae.png",
     "static/media/armeniaHeart.png": "/static/media/armeniaHeart.b31a9946.png",
     "static/media/App.css": "/static/media/monastery.8226e90d.jpg",
-    "static/media/graph1.png": "/static/media/graph1.ec19464c.png",
+    "static/media/graph1.png": "/static/media/graph1.d6351058.png",
     "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
     "static/media/map1.png": "/static/media/map1.12a99a32.png",
     "static/media/town.jpg": "/static/media/town.fd5495a4.jpg"
@@ -25,6 +25,6 @@
     "static/js/runtime-main.677f2e1f.js",
     "static/js/2.038b3447.chunk.js",
     "static/css/main.7dd3abf4.chunk.css",
-    "static/js/main.1b18fbde.chunk.js"
+    "static/js/main.25dcadc4.chunk.js"
   ]
 }
