@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ddccc65157dfb7e224b33298c9dc085c",
+    "revision": "661d0c739dcc1ded45e13fad48040a3f",
     "url": "/index.html"
   },
   {
-    "revision": "a345eb6f918a0551e4d4",
+    "revision": "1f7a716bc732b9c3e2ff",
     "url": "/static/css/main.0f4ee399.chunk.css"
   },
   {
-    "revision": "3cbb3c4a5dc4e366cde2",
-    "url": "/static/js/2.dfd9c886.chunk.js"
+    "revision": "6609d34ddb554b4562ef",
+    "url": "/static/js/2.038b3447.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.dfd9c886.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.038b3447.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a345eb6f918a0551e4d4",
-    "url": "/static/js/main.73c97141.chunk.js"
+    "revision": "1f7a716bc732b9c3e2ff",
+    "url": "/static/js/main.35ddb425.chunk.js"
   },
   {
     "revision": "a7dcc93221af03d3feb3",
     "url": "/static/js/runtime-main.677f2e1f.js"
+  },
+  {
+    "revision": "92354d7596e875014113a287c52b5284",
+    "url": "/static/media/DestroyedHouse.92354d75.jpg"
   },
   {
     "revision": "6401acaedf1f5ba73e9bb939f61266aa",
@@ -34,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c08ca6675ed1afb1c114ac616fa6895c",
     "url": "/static/media/cemetary1.c08ca667.jpg"
+  },
+  {
+    "revision": "ec19464ca7b27c9a6eb33da65135cbb6",
+    "url": "/static/media/graph1.ec19464c.png"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
