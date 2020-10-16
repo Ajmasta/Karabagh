@@ -3,7 +3,7 @@
     "navBar":["Conflict","Infos","News","Help"],
     "homepage": {
       "Panel1": ["On the 27th of September, Azerbaijan launched a military attack to invade Nagorno-Karabagh, a region majoritarily populated by Armenians for centuries."],
-      "Panel2": ["The conflict has already claimed thousands of lives, including hundred of civilian deaths.","We urge the world to put pressure on Azerbaijan and Turkey, its war-hungry ally, to hold them both accountable and put an end to the conflict."],
+      "Panel2": ["The conflict has already claimed thousands of lives, including hundreds of civilian deaths.","We urge the world to put pressure on Azerbaijan and Turkey, its war-hungry ally, to hold them both accountable and put an end to the conflict."],
       "Panel3": ["Armenian civilians living in Karabagh are shelled daily by Azerbaijan and cities are being destroyed.","Armenians are afraid of becoming victims of another genocide."],
       "buttons":["Help","Read the Latest News","Learn More"]
     },
