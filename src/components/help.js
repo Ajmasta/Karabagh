@@ -47,7 +47,6 @@ const Help = ({textContent}) => {
 
       <Grid xs={12}> <h2>  {textContent.help.titles[0]}</h2></Grid>
       <h3>The Armenian Fund</h3>
-      
       <div id="donateButton">
       <a onClick={()=> GAButtonClick("Button","click","Armenian Fund")} href="https://armeniafund.ejoinme.org/donate">
         <Button className="coverButton">{textContent.help.buttons[0]}</Button></a>
