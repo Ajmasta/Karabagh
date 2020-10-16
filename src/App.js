@@ -26,7 +26,8 @@ import monastery from "./images/monastery.jpg";
 import RegionalMap from "./images/RegionalMap.png";
 import "./App.css";
 import town from "./images/town.jpg"
-
+import graph1 from "./images/graph1.png"
+import destroyedHouse from "./images/DestroyedHouse.jpg"
 import Help from "./components/help";
 import NewsTile from "./components/newsTile";
 
@@ -101,7 +102,7 @@ function App() {
               <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon" />}>{textContent.infos.history.Panel1.title} </AccordionSummary>
                 <AccordionDetails className="accordionDetails">
                   <InfoPanel
-                    image={monastery}
+                    image={graph1}
                     imageAlt={"logo"}
                     text={textContent.infos.history.Panel1.text}
                     id="history"
@@ -122,7 +123,7 @@ function App() {
               <Accordion expanded={expanded ==="panel3"} onChange={handleTabChange("panel3")} className="accordionTab"  >
               <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon"/>}>{textContent.infos.history.Panel3.title}</AccordionSummary>
                 <AccordionDetails className="accordionDetails" >
-                  <InfoPanel image={RegionalMap} imageAlt={"logo"} text={textContent.infos.history.Panel3.text}/>
+                  <InfoPanel image={destroyedHouse} imageAlt={"logo"} text={textContent.infos.history.Panel3.text}/>
                 </AccordionDetails>
                </Accordion>
  
