@@ -24,8 +24,8 @@ const NewsTile = ({ image, title, description, url }) => {
 
       <Grid xs={12} sm={9} container item className="newsText">
         <a href={url}>
-          <Grid>
-            <a className="newsTitle" href={url}>
+          <Grid  className="newsTitleContainer">
+            <a  className="newsTitle" href={url}>
               {title}
             </a>
           </Grid>

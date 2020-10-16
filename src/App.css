@@ -176,6 +176,7 @@
   border-radius: 1%;
 }
 .newsTiles {
+  margin: auto;
   justify-content: center;
   align-content: space-around;
   display: flex;
@@ -184,6 +185,7 @@
   -webkit-justify-content: center;
   align-items: center;
   -webkit-align-items: center;
+  max-width: 1200px;
 }
 .newsTile {
   margin: auto;
@@ -204,7 +206,7 @@
   justify-self: center;
 }
 .newsTile:hover {
-  background-color: rgb(250, 160, 75);
+  background-color: rgb(243, 173, 107);
 }
 
 .newsTitle {
