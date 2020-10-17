@@ -264,6 +264,12 @@ a:active {
   width: 50%;
   justify-content: center;
 }
+
+@media (max-width: 845px) {
+  #helpMainBody {
+    width: 80%;
+  }
+}
 #helpPage {
   justify-content: center;
 }
