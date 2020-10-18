@@ -151,7 +151,11 @@
   background-color: rgb(255, 0, 0) !important;
   color: white !important;
 }
-
+.helpButton {
+  margin: auto !important;
+  background-color: rgb(255, 0, 0) !important;
+  color: white !important;
+}
 .historySelector {
   display: flex;
   flex-direction: row;

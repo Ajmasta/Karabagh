@@ -49,7 +49,7 @@ const Help = ({textContent}) => {
       <h3>The Armenian Fund</h3>
       <div id="donateButton">
       <a onClick={()=> GAButtonClick("Button","click","Armenian Fund")} href="https://armeniafund.ejoinme.org/donate">
-        <Button className="coverButton">{textContent.help.buttons[0]}</Button></a>
+        <Button className="helpButton">{textContent.help.buttons[0]}</Button></a>
         <p>
         {textContent.help.explanation[0]}
         </p>
@@ -57,7 +57,7 @@ const Help = ({textContent}) => {
         </div>
         <div id="donateButton">
         <a  onClick={()=> GAButtonClick("Button","click","Hayastan All Armenian Fund")} href="https://www.himnadram.org/en">
-        <Button className="coverButton">{textContent.help.buttons[0]}</Button></a>
+        <Button className="helpButton">{textContent.help.buttons[0]}</Button></a>
         <p>
         {textContent.help.explanation[1]} 
          </p>
@@ -84,7 +84,7 @@ const Help = ({textContent}) => {
           <p>UK: <a className="helpLinks" href="https://members.parliament.uk/FindYourMP"> Find your MP</a> </p>
           <Button className="coverButton" onClick={()=>setLetterVisible(!letterVisible)}> {textContent.help.buttons[1]} </Button>  {letterVisible? <div style={{border:"1px solid black"}} >{textContent.help.letter.map(sentence=> <p> {sentence}</p>)} </div>:""}
 
-          <h3>{textContent.help.titles[2]}</h3>
+          <h3>{textContent.help.subtitles[1]}</h3>
           <p> {textContent.help.explanation[3]}</p>
       </Grid>
    
