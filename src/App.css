@@ -175,6 +175,33 @@
 
   border-radius: 1%;
 }
+@media (min-width: 600px) and (max-width: 850px) {
+  .newsImage {
+    width: auto;
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 10px;
+    border-radius: 1%;
+  }
+}
+
+@media (min-width: 850px) {
+  .newsImage {
+    width: auto;
+    max-height: 150px;
+    max-width: 150px;
+    margin-left: 10px;
+    border-radius: 1%;
+  }
+}
+.newsDate {
+  font-weight: 600;
+  color: grey;
+  float: right;
+  margin: 0;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
 .newsTiles {
   margin: auto;
   justify-content: center;
@@ -213,6 +240,9 @@
   font-weight: 700;
   font-size: 1.2rem;
   height: 10%;
+}
+.newsTitleContainer {
+  margin-top: 5px;
 }
 a {
   color: black;

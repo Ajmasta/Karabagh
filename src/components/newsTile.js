@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import CoverPanel from "./coverPanel";
 import { GApageView } from "./googleAnalytics";
 
-const NewsTile = ({ image, title, description, url }) => {
+const NewsTile = ({ image, title, description, url, date }) => {
   useEffect(() => { GApageView("news"); }, []);
 
   return (
@@ -31,6 +31,9 @@ const NewsTile = ({ image, title, description, url }) => {
           </Grid>
           <Grid sm={12}>
             <p className="newsDescription">{description}</p>{" "}
+          </Grid>
+          <Grid>
+            <p className="newsDate"> {date}</p>
           </Grid>
         </a>
       </Grid>
