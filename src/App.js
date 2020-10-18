@@ -67,7 +67,7 @@ function App() {
   const newsGenerator = () => {
    
     let newsPage = []
-    for(let i=16;i>=1;i--){
+    for(let i=17;i>=1;i--){
      
       newsPage.push(<NewsTile key={i} date={textContent.news[i].date} image={textContent.news[i].image} description={textContent.news[i].description} title={textContent.news[i].title} url={textContent.news[i].url} />)
     }
