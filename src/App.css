@@ -163,6 +163,9 @@
   font-weight: 700;
   width: 100%;
 }
+.historySelector > p {
+  cursor: pointer;
+}
 #helpNavBar {
   display: flex;
   direction: row;
