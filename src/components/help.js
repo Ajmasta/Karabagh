@@ -76,7 +76,7 @@ const Help = ({textContent}) => {
       House of Commons Petition</a> 
     
       </p> <p> USA: <a onClick={()=> GAButtonClick("Link","click","White House Petition ")} className="helpLinks"  href="https://petitions.whitehouse.gov/petition/expel-turkey-nato-warn-turkey-and-azerbaijan-against-committing-new-genocide-against-armenia?fbclid=IwAR17nzQWZoyn8wcAuaIrQaX0KRdX6OSMrehxqjpMF3qI0ZpLZYvVjR9c7c4">
-      White House Petition to Remove Turkey from NATO </a> <br /> <a onClick={()=> GAButtonClick("Link","click","White House Petition ")} className="helpLinks"  href="https://petitions.whitehouse.gov/petition/condemn-aggression-turkey-and-azerbaijan-against-artsakh-armenia">Condemn Azerbaijan's Aggression of Armenia</a></p></div>
+      White House Petition to Remove Turkey from NATO </a> <br /> <a onClick={()=> GAButtonClick("Link","click","White House Petition - Azerbaijan Aggression ")} className="helpLinks"  href="https://petitions.whitehouse.gov/petition/condemn-aggression-turkey-and-azerbaijan-against-artsakh-armenia">Condemn Azerbaijan's Aggression of Armenia</a></p></div>
       
       <Grid xs={12} id="contact">
       <h2> {textContent.help.titles[2]}</h2>
