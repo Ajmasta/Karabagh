@@ -70,8 +70,10 @@ const Help = ({textContent}) => {
         <h2>  {textContent.help.titles[1]}</h2>
       </Grid>
 
-      <div><p>Canada: <a  className="helpLinks"  href="https://petitions.ourcommons.ca/en/Petition/Sign/e-2885">
-      House of Commons Petition</a></p></div>
+      <div><p>Canada: <a onClick={()=> GAButtonClick("Link","click","House of Commons Petition ")} className="helpLinks"  href="https://petitions.ourcommons.ca/en/Petition/Sign/e-2885">
+      House of Commons Petition</a> 
+    
+      </p></div>
       
       <Grid xs={12} id="contact">
       <h2> {textContent.help.titles[2]}</h2>
@@ -79,7 +81,8 @@ const Help = ({textContent}) => {
         <h3> {textContent.help.subtitles[0]}</h3>
         <p> {textContent.help.explanation[2]}</p>
           <p>USA: <a className="helpLinks" href="https://www.usa.gov/elected-officials"> Contact Elected Officials</a></p>
-          <p> Canada: <a className="helpLinks"  href="https://represent.opennorth.ca/"> Find your Representative</a></p>
+          <p> Canada: <a className="helpLinks"  href="https://represent.opennorth.ca/"> Find your Representative</a> <br/>   
+      United Armenians: <a onClick={()=> GAButtonClick("Link","click","United Armenians ")} className="helpLinks"  href="https://unitedarmenians.ca/action-alerts/"> Easily Email Politicians in Canada </a>  </p>
           <p> Europe: <a className="helpLinks"  href="https://www.consilium.europa.eu/en/contact/general-enquiries/send-message/?IsPresident=true&__cf_chl_jschl_tk__=5243439a02c1d4054d9a6a16f9da7de5252b61c3-1602566947-0-AdSepdZw7bsaaPyUN4N5SnzVS4xs0-UsK_lLKivAOfi1REtWGrOBI5BdvU5GKesLxxIJcQWNQCFz1wPkGfrDFKLMvZPTuOqjPtPpfPPAJFXpE5uAXNnX3svzZS5xMbw-AyrgUOxMG6tLBwWt7BkwzbLvbzDOeVDYX9vdJHBYfUl1iBiFtb4QO8DrU82CFt6kL_us5SslcqXUk82VyyX7EYqMjp11Yfz4oJdc-duKfup0Ki9LS2Elc6faP_tLWjdH263TBLt3HXU6rhzmhJq9dAiuVZLrPAaqkR44wtR_994FXUX1mPblVKf_NHzHaqqpTL2JQjY-g6LejkXPyRio0kS5aKnt8S1D4bmPwwuwlgK6"> European Council</a></p>
           <p>UK: <a className="helpLinks" href="https://members.parliament.uk/FindYourMP"> Find your MP</a> </p>
           <Button className="coverButton" onClick={()=>setLetterVisible(!letterVisible)}> {textContent.help.buttons[1]} </Button>  {letterVisible? <div style={{border:"1px solid black"}} >{textContent.help.letter.map(sentence=> <p> {sentence}</p>)} </div>:""}
