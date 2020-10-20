@@ -62,7 +62,7 @@ const LanguagePicker = ({ textContent, setTextContent }) => {
           onClick={() => setLanguageChoice(true)}
         />
       )}
-    </>
+      </>
   );
 };
 export default LanguagePicker;

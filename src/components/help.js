@@ -45,7 +45,7 @@ const Help = ({textContent}) => {
       </Grid>
       <Grid item container id="helpMainBody" justifyContent="center">
 
-      <Grid xs={12}> <h2>  {textContent.help.titles[0]}</h2></Grid>
+      <Grid xs={12} id="donate"> <h2>  {textContent.help.titles[0]}</h2></Grid>
       <h3>The Armenian Fund</h3>
       <div id="donateButton">
       <a onClick={()=> GAButtonClick("Button","click","Armenian Fund")} href="https://armeniafund.ejoinme.org/donate">

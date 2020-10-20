@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "../images/armeniaHeart.png";
 import Grid from "@material-ui/core/Grid";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Toolbar from "@material-ui/core/Toolbar";
