@@ -136,6 +136,7 @@ function App() {
               {/* FAQ START */}
               {createAccordion(textContent.infos.faq.Panel5.text,textContent.infos.faq.Panel5.title,"panel5" )}
               {createAccordion(textContent.infos.faq.Panel13.text,textContent.infos.faq.Panel13.title,"panel13" )}
+              {createAccordion(textContent.infos.faq.Panel14.text,textContent.infos.faq.Panel14.title,"panel14" )}
               {createAccordion(textContent.infos.faq.Panel6.text,textContent.infos.faq.Panel6.title,"panel6" )}
               {createAccordion(textContent.infos.faq.Panel7.text,textContent.infos.faq.Panel7.title,"panel7" )}
               {createAccordion(textContent.infos.faq.Panel8.text,textContent.infos.faq.Panel8.title,"panel8" )}
