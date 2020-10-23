@@ -41,12 +41,13 @@ function App() {
   const [expanded,setExpanded] = useState(false)
   const handleTabChange = (panel) => (event, newExpanded)=> { setExpanded(newExpanded? panel:false)}
 
-  const createAccordion = (text,title,id) => { 
+  const createAccordion = (text,title,id, link,linkText) => { 
+
     return (
       <Accordion expanded={expanded ===id} onChange={handleTabChange(id)} className="accordionTab"  >
       <AccordionSummary className="accordionSummary" expandIcon={<ExpandMoreIcon className="expandIcon"/>}>{title}</AccordionSummary>
         <AccordionDetails className="accordionDetails" >
-          <FaqPanel text={text}/>
+          <FaqPanel text={text} linkText={linkText} link={link}/>
         </AccordionDetails>
        </Accordion>
     )
@@ -134,7 +135,7 @@ function App() {
               </Grid>
               {/* FAQ START */}
               {createAccordion(textContent.infos.faq.Panel5.text,textContent.infos.faq.Panel5.title,"panel5" )}
-              {createAccordion(textContent.infos.faq.Panel13.text,textContent.infos.faq.Panel13.title,"panel13" )}
+              {createAccordion(textContent.infos.faq.Panel13.text,textContent.infos.faq.Panel13.title,"panel13",textContent.infos.faq.Panel13.link, textContent.infos.faq.Panel13.linkText)}
               {createAccordion(textContent.infos.faq.Panel14.text,textContent.infos.faq.Panel14.title,"panel14" )}
               {createAccordion(textContent.infos.faq.Panel6.text,textContent.infos.faq.Panel6.title,"panel6" )}
               {createAccordion(textContent.infos.faq.Panel7.text,textContent.infos.faq.Panel7.title,"panel7" )}
