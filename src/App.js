@@ -20,7 +20,6 @@ import CoverPanel from "./components/coverPanel.js";
 import FaqPanel from "./components/faqPanel"
 import LanguagePicker from "./components/languagePicker.js";
 import texts from "./text.json";
-import logo from "./logo.svg";
 import map1 from "./images/map1.png";
 import monastery from "./images/monastery.jpg";
 import RegionalMap from "./images/RegionalMap.png";
@@ -160,7 +159,7 @@ function App() {
             <Help textContent={textContent} />
           </Route>
           <Route path="/">
-            <>
+            
               <CoverPanel
                 id="1"
                 text={textContent.homepage.Panel1}
@@ -182,7 +181,7 @@ function App() {
               />
 
             
-            </>
+            
           </Route>
         </Switch>
       </Grid>
